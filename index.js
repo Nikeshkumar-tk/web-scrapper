@@ -5,9 +5,11 @@ import PupputeerCore from "./lib/core/index.js"
 (async() => {
 
 
-const scrapper = new PupputeerCore({pageUrl:"https://www.npmjs.com/package/puppeteer"})
+const scrapper = new PupputeerCore({pageUrl:"https://goku.to/home"})
 
 scrapper.createPdf({fileName:"testFile"})
-
+scrapper.getScreenshot({fileName:"testFile"})
 
 })()
+
+
